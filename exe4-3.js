@@ -4,7 +4,7 @@ let min = 1;
 let max = 10;
 let arr = [];
 let i = 1;
-let n = readlineSync.question("How much random will you? ");
+let n = readlineSync.question("How much random numbers will you? ");
 
 function rand10(min, max) {
 
@@ -20,4 +20,4 @@ function multiRand(n)  {
     multiRand(n);
  
     
-    console.log("Your random number is: " + arr);
+    console.log("Your random number(s) is (are): " + arr);
