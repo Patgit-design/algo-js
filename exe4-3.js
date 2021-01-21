@@ -6,12 +6,12 @@ let arr = [];
 let i = 1;
 let n = readlineSync.question("How much random numbers will you? ");
 
-function rand10(min, max) {
+function rand10(a, b) {
 
 return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-function multiRand(n)  {
+function multiRand(b)  {
     while (i <= n) {
       rand10(min, max);
       i += 1;
