@@ -9,16 +9,19 @@ function askTvSerie() {
     while (members != 'end') {
         members = readlineSync.question("Which are the names of the cast members ? Write end to stop !");
         answer.cast.push(members);
+       
     }}
     answer.cast.pop(x-1);
+   
 
-    function randomizeCast(tvSerie)  {
+    function randomizeCast()  {
         return answer.cast[Math.floor(Math.random()*answer.length)];
        
     }
-    askTvSerie();
-
+    console.log(JSON.stringify(askTvSerie()));
+   askTvSerie();
+    randomizeCast();
+    console.log(randomizeCast());
    
-    
 
-console.log(JSON.stringify(randomizeCast(tvSerie)));
+
